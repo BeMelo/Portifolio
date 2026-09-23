@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Thallyson Albert — Fotografia</title>
+<meta content="Portfólio de Thallyson Albert, fotografia desportiva, Jiu-Jitsu, retrato e narrativa documental." name="description"/>
+<meta content="#f4f1ea" name="theme-color"/>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;max-width:100%;overflow-x:hidden}
+html{scroll-behavior:smooth}
+body{background:#f4f1ea;color:#171614;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+figure{margin:0}
+.site{width:100%;overflow:hidden}
+.nav{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:24px;width:100%;padding:18px 3vw;border-bottom:1px solid rgba(23,22,20,.14);background:rgba(244,241,234,.93);backdrop-filter:blur(14px)}
+.brand{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.navlinks{display:flex;gap:24px;font-size:12px;color:#625d57}
+.navlinks a{white-space:nowrap}
+
+.hero{min-height:calc(100vh - 57px);display:flex;align-items:flex-end;padding:6vw 3vw 5vw}
+.hero-inner{width:100%;max-width:1600px;margin:0 auto}
+.eyebrow{margin:0 0 20px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#716b64}
+.hero h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(72px,11.2vw,176px);font-weight:400;line-height:.78;letter-spacing:-.07em}
+.hero h1 span{display:block;white-space:nowrap}
+.hero-bottom{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.55fr);gap:5vw;align-items:end;margin-top:5vw;padding-top:18px;border-top:1px solid #cec8be}
+.hero-bottom h2{margin:0;max-width:850px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,4.1vw,66px);font-weight:400;line-height:.98;letter-spacing:-.045em}
+.hero-bottom p{margin:0;max-width:520px;font-size:15px;line-height:1.7;color:#625d57}
+
+.section{padding:10vw 3vw;max-width:1600px;margin:0 auto}
+.section-head{display:grid;grid-template-columns:150px minmax(0,1fr) 330px;gap:2.5vw;align-items:start;padding-top:16px;margin-bottom:5vw;border-top:1px solid #cec8be}
+.num{font-size:11px;color:#716b64}
+.section-head h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(50px,6.5vw,105px);font-weight:400;line-height:.9;letter-spacing:-.055em}
+.section-head p{margin:0;font-size:14px;line-height:1.65;color:#625d57}
+
+.sport-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:22px;align-items:start}
+.sport-card{min-width:0}
+.sport-card img{width:100%;height:auto;object-fit:contain}
+.sport-card figcaption{display:flex;justify-content:space-between;gap:16px;padding-top:9px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#716b64}
+.sport-a{grid-column:1/8}
+.sport-b{grid-column:9/13}
+.sport-c{grid-column:1/5;margin-top:2vw}
+.sport-d{grid-column:5/13;margin-top:2vw}
+.sport-e{grid-column:1/8;margin-top:2vw}
+.sport-f{grid-column:9/13;margin-top:2vw}
+.tatami-quote{display:grid;grid-template-columns:150px minmax(0,820px);gap:2.5vw;margin-top:7vw;padding-top:18px;border-top:1px solid #cec8be}
+.tatami-quote span{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#716b64}
+.tatami-quote p{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(26px,3.3vw,50px);line-height:1.04;letter-spacing:-.04em}
+
+.statement{width:100%;background:#171614;color:#f8f4ed}
+.statement-inner{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:150px minmax(0,1fr);gap:3vw;padding:9vw 3vw}
+.statement .index{font-size:11px;color:rgba(248,244,237,.45)}
+.kicker{margin:0 0 30px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:rgba(248,244,237,.45)}
+.statement h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(50px,7vw,116px);font-weight:400;line-height:.88;letter-spacing:-.06em}
+.statement .lead{max-width:780px;margin:5vw 0 0 auto;font-size:clamp(18px,2vw,28px);line-height:1.48;color:rgba(248,244,237,.75)}
+
+.outside-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:22px;align-items:start}
+.outside-card{min-width:0}
+.outside-card.span4{grid-column:span 4}
+.outside-card.span6{grid-column:span 6}
+.outside-card.span8{grid-column:span 8}
+.outside-card img{width:100%;height:auto;object-fit:contain;background:transparent}
+.outside-card figcaption{padding-top:8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#716b64}
+.gallery-note{grid-column:1/13;display:grid;grid-template-columns:150px minmax(0,740px);gap:2.5vw;margin:5vw 0 2vw;padding-top:18px;border-top:1px solid #cec8be}
+.gallery-note span{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#716b64}
+.gallery-note p{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3vw,46px);line-height:1.06;letter-spacing:-.04em}
+
+.autobio{width:100%;background:#ebe6dc;border-top:1px solid #d1cbc1}
+.autobio-inner{max-width:1500px;margin:0 auto;display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:8vw;align-items:end;padding:10vw 6vw}
+.autobio-photo img{width:100%;height:auto;object-fit:contain}
+.micro{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#716b64}
+.autobio-copy{min-width:0;max-width:900px}
+.autobio-copy .num{display:block;margin-bottom:28px}
+.autobio-copy h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,6.5vw,104px);font-weight:400;line-height:.9;letter-spacing:-.055em}
+.autobio-lead{margin:42px 0 0;max-width:760px;font-size:clamp(19px,2vw,29px);line-height:1.5;color:#34312d}
+.autobio-body{margin:24px 0 0;max-width:700px;font-size:15px;line-height:1.75;color:#625d57}
+
+.contact{padding:10vw 3vw 6vw;max-width:1600px;margin:0 auto;border-top:1px solid #cec8be}
+.contact h3{margin:18px 0 0;max-width:1400px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(52px,8vw,132px);font-weight:400;line-height:.86;letter-spacing:-.06em}
+.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:4vw;margin-top:6vw;padding-top:18px;border-top:1px solid #cec8be}
+.contact-row p{margin:0;max-width:560px;font-size:14px;line-height:1.65;color:#625d57}
+.contact-row .pending{justify-self:end;text-align:right}
+.footer{display:flex;justify-content:space-between;gap:20px;padding:22px 3vw 30px;border-top:1px solid #cec8be;font-size:11px;color:#716b64}
+
+@media screen and (max-width:991px){
+  .hero{padding-top:9vw}
+  .hero-bottom{grid-template-columns:1fr;gap:24px}
+  .section-head{grid-template-columns:90px 1fr}
+  .section-head p{grid-column:2}
+  .sport-a{grid-column:1/7}
+  .sport-b{grid-column:7/13}
+  .sport-c{grid-column:1/7;margin-top:0}
+  .sport-d{grid-column:7/13;margin-top:0}
+  .sport-e{grid-column:1/7;margin-top:0}
+  .sport-f{grid-column:7/13;margin-top:0}
+  .tatami-quote,.gallery-note{grid-template-columns:90px 1fr}
+  .statement-inner{grid-template-columns:90px 1fr}
+  .outside-card.span4{grid-column:span 6}
+  .outside-card.span6{grid-column:span 6}
+  .outside-card.span8{grid-column:span 12}
+  .gallery-note{grid-column:1/13}
+  .autobio-inner{grid-template-columns:minmax(230px,360px) minmax(0,1fr);gap:5vw;padding-left:3vw;padding-right:3vw}
+}
+@media screen and (max-width:767px){
+  .nav{padding:15px 18px}
+  .navlinks{gap:14px;font-size:11px}
+  .navlinks a[href="#sobre"]{display:none}
+  .hero{min-height:calc(100vh - 51px);padding:54px 18px 54px}
+  .hero h1{font-size:15.5vw;line-height:.82}
+  .hero-bottom{margin-top:54px}
+  .hero-bottom h2{font-size:42px}
+  .section{padding:88px 18px}
+  .section-head{grid-template-columns:42px 1fr;gap:14px;margin-bottom:48px}
+  .section-head h3{font-size:54px}
+  .section-head p{grid-column:2;font-size:13px}
+  .sport-grid{grid-template-columns:1fr;gap:34px}
+  .sport-a,.sport-b,.sport-c,.sport-d,.sport-e,.sport-f{grid-column:auto;margin-top:0}
+  .sport-card{width:min(100%,620px)}
+  .sport-card:nth-child(even){justify-self:end}
+  .tatami-quote{grid-template-columns:1fr;gap:14px;margin-top:64px}
+  .statement-inner{grid-template-columns:1fr;gap:42px;padding:88px 18px}
+  .statement h3{font-size:58px}
+  .statement .lead{margin-top:52px;font-size:18px}
+  .outside-grid{grid-template-columns:1fr;gap:40px}
+  .outside-card.span4,.outside-card.span6,.outside-card.span8{grid-column:auto}
+  .outside-card{width:min(100%,650px)}
+  .outside-card:nth-of-type(even){justify-self:end}
+  .gallery-note{grid-column:auto;grid-template-columns:1fr;gap:14px;margin:26px 0 8px}
+  .autobio-inner{grid-template-columns:1fr;gap:52px;padding:88px 18px}
+  .autobio-photo{width:min(82%,430px)}
+  .autobio-copy h3{font-size:56px}
+  .autobio-lead{margin-top:32px;font-size:19px}
+  .contact{padding:88px 18px 54px}
+  .contact h3{font-size:56px}
+  .contact-row{grid-template-columns:1fr;gap:18px;margin-top:52px}
+  .contact-row .pending{justify-self:start;text-align:left}
+  .footer{padding:20px 18px 28px}
+}
+@media screen and (max-width:479px){
+  .navlinks a[href="#autobiografia"]{display:none}
+  .hero h1{font-size:15vw}
+  .hero-bottom h2{font-size:36px}
+  .section-head h3{font-size:48px}
+  .autobio-photo{width:100%}
+  .autobio-copy h3{font-size:48px}
+  .footer{flex-direction:column;gap:6px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="nav">
+<a class="brand" href="#inicio">Thallyson Albert</a>
+<nav aria-label="Navegação principal" class="navlinks">
+<a href="#trabalho">Trabalho</a>
+<a href="#sobre">Sobre</a>
+<a href="#autobiografia">História</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="hero-inner">
+<p class="eyebrow">Fotografia desportiva &amp; documental</p>
+<h1><span>THALLYSON</span><span>ALBERT</span></h1>
+<div class="hero-bottom">
+<h2>Movimento, presença e memória num só olhar.</h2>
+<p>Fotografia feita por dentro do movimento — atenta ao instante, à emoção e aos detalhes que passam depressa demais para serem repetidos.</p>
+</div>
+</div>
+</section>
+<section class="section" id="trabalho">
+<div class="section-head">
+<span class="num">01 — Dentro do tatame</span>
+<h3>Trabalho<br/>selecionado</h3>
+<p>Uma série única sobre o Jiu-Jitsu: técnica, emoção, proximidade e os segundos que normalmente passam depressa demais.</p>
+</div>
+<div class="sport-grid">
+<figure class="sport-card sport-a">
+<img alt="Dois praticantes de Jiu-Jitsu em pé durante uma explicação no tatame" decoding="async" height="1365" loading="lazy" src="assets/photo-01.jpg" width="2048"/>
+<figcaption><span>Contexto</span><span>Tatame</span></figcaption>
+</figure><figure class="sport-card sport-b">
+<img alt="Praticante de Jiu-Jitsu sentada no tatame num momento de emoção" decoding="async" height="2048" loading="lazy" src="assets/photo-02.jpg" width="1365"/>
+<figcaption><span>Emoção</span><span>Tatame</span></figcaption>
+</figure><figure class="sport-card sport-c">
+<img alt="Momento de treino de Jiu-Jitsu no chão" decoding="async" height="2048" loading="lazy" src="assets/photo-03.jpg" width="1365"/>
+<figcaption><span>Controlo</span><span>Treino</span></figcaption>
+</figure><figure class="sport-card sport-d">
+<img alt="Demonstração de técnica de Jiu-Jitsu no tatame" decoding="async" height="1365" loading="lazy" src="assets/photo-04.jpg" width="2047"/>
+<figcaption><span>Técnica</span><span>Demonstração</span></figcaption>
+</figure><figure class="sport-card sport-e">
+<img alt="Criança deitada no tatame a sorrir entre momentos de treino" decoding="async" height="1365" loading="lazy" src="assets/photo-05.jpg" width="2048"/>
+<figcaption><span>Entre momentos</span><span>Jiu-Jitsu</span></figcaption>
+</figure><figure class="sport-card sport-f">
+<img alt="Dois praticantes de Jiu-Jitsu num abraço após o treino" decoding="async" height="2048" loading="lazy" src="assets/photo-06.jpg" width="1365"/>
+<figcaption><span>Depois da luta</span><span>Jiu-Jitsu</span></figcaption>
+</figure>
+</div>
+<div class="tatami-quote">
+<span>Timing</span>
+<p>Não é só seguir a ação. É perceber quando ela vai acontecer — e reconhecer o que fica depois dela.</p>
+</div>
+</section>
+<section class="statement" id="sobre">
+<div class="statement-inner">
+<div class="index">02 — Sobre</div>
+<div>
+<p class="kicker">Por dentro do movimento</p>
+<h3>Ele não fotografa<br/>o desporto de fora.</h3>
+<p class="lead">Fotografar desporto é antecipar o instante antes de ele acontecer. Como professor, competidor e faixa marrom de Jiu-Jitsu, Thallyson conhece esse ritmo por dentro — a pausa antes da explosão, a tensão de uma posição, o detalhe que passa despercebido.</p>
+</div>
+</div>
+</section>
+<section class="section" id="alem">
+<div class="section-head">
+<span class="num">03 — Além do tatame</span>
+<h3>Fora do<br/>tatame</h3>
+<p>Retrato, proximidade, exterior e histórias onde o movimento dá lugar à presença.</p>
+</div>
+<div class="outside-grid"><figure class="outside-card span4"><img alt="Duas pessoas num retrato exterior em ambiente natural" decoding="async" loading="lazy" src="assets/photo-07.jpg"/><figcaption>Exterior</figcaption></figure><figure class="outside-card span4"><img alt="Duas pessoas a caminhar juntas num ambiente arborizado" decoding="async" loading="lazy" src="assets/photo-08.jpg"/><figcaption>Documental</figcaption></figure><figure class="outside-card span4"><img alt="Retrato exterior junto à costa" decoding="async" loading="lazy" src="assets/photo-09.jpg"/><figcaption>Retrato</figcaption></figure><figure class="outside-card span6"><img alt="Grupo a caminhar em direção à costa rochosa" decoding="async" loading="lazy" src="assets/photo-10.jpg"/><figcaption>Documental</figcaption></figure><figure class="outside-card span6"><img alt="Duas pessoas junto à água numa praia rochosa" decoding="async" loading="lazy" src="assets/photo-11.jpg"/><figcaption>Exterior</figcaption></figure><figure class="outside-card span8"><img alt="Casal junto ao mar num registo documental" decoding="async" loading="lazy" src="assets/photo-12.jpg"/><figcaption>Documental</figcaption></figure><figure class="outside-card span4"><img alt="Retrato espontâneo de duas pessoas" decoding="async" loading="lazy" src="assets/photo-13.jpg"/><figcaption>Retrato</figcaption></figure><div class="gallery-note"><span>Ritmo</span><p>Há fotografias que pedem explosão. Outras pedem silêncio.</p></div><figure class="outside-card span4"><img alt="Retrato a preto e branco junto ao mar" decoding="async" loading="lazy" src="assets/photo-14.jpg"/><figcaption>Preto e branco</figcaption></figure><figure class="outside-card span4"><img alt="Retrato a preto e branco na praia" decoding="async" loading="lazy" src="assets/photo-15.jpg"/><figcaption>Preto e branco</figcaption></figure><figure class="outside-card span4"><img alt="Retrato a preto e branco junto à linha de água" decoding="async" loading="lazy" src="assets/photo-16.jpg"/><figcaption>Preto e branco</figcaption></figure><figure class="outside-card span4"><img alt="Retrato de duas pessoas num ambiente natural" decoding="async" loading="lazy" src="assets/photo-17.jpg"/><figcaption>Retrato</figcaption></figure><figure class="outside-card span4"><img alt="Retrato de duas pessoas em exterior" decoding="async" loading="lazy" src="assets/photo-18.jpg"/><figcaption>Retrato</figcaption></figure><figure class="outside-card span4"><img alt="Retrato intimista a preto e branco" decoding="async" loading="lazy" src="assets/photo-19.jpg"/><figcaption>Retrato</figcaption></figure><figure class="outside-card span8"><img alt="Duas pessoas num registo junto à costa" decoding="async" loading="lazy" src="assets/photo-20.jpg"/><figcaption>Editorial</figcaption></figure><figure class="outside-card span4"><img alt="Retrato a preto e branco na praia" decoding="async" loading="lazy" src="assets/photo-21.jpg"/><figcaption>Preto e branco</figcaption></figure></div>
+</section>
+<section class="autobio" id="autobiografia">
+<div class="autobio-inner">
+<div class="autobio-photo">
+<figure>
+<img alt="Thallyson em criança a segurar uma câmara" decoding="async" loading="lazy" src="assets/photo-22.jpg"/>
+</figure>
+<div class="micro"><span>Arquivo pessoal</span><span>Desde os 11 anos</span></div>
+</div>
+<div class="autobio-copy">
+<span class="num">04 — Autobiografia</span>
+<h3>O tempo passa.<br/>Um clique fica.</h3>
+<p class="autobio-lead">Sou um amante da fotografia desde os 11 anos. Desde cedo, registar momentos tornou-se parte da minha forma de olhar para o mundo. Sempre me fascinou a ideia de conseguir guardar, num único clique, aquilo que existe apenas por um instante.</p>
+<p class="autobio-body">O Jiu-Jitsu ensinou-me a ler o movimento, a tensão e o momento certo. A fotografia mostrou-me que essa mesma sensibilidade também existia fora dos tatamis. Foi aí que percebi que tinha encontrado uma segunda paixão: uma forma de transformar segundos em memória e fazer com que um momento continue vivo, mesmo depois de passar.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contacto">
+<span class="num">05 — Contacto</span>
+<h3>Vamos criar algo<br/>que valha a pena guardar.</h3>
+<div class="contact-row">
+<p>Disponível para competições, atletas, equipas, retratos e projetos editoriais e fotográficos.</p>
+<p class="pending">Email / Instagram a adicionar</p>
+</div>
+</section>
+</main>
+<footer class="footer">
+<span>Thallyson Albert — Fotografia</span>
+<span>Portfólio</span>
+</footer>
+</div>
+</body>
+</html>
